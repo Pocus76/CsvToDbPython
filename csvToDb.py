@@ -21,7 +21,6 @@ try:
         rdr = csv.reader(source, delimiter=';')
         wtr = csv.writer(result, delimiter=';')
         for r in rdr:
-            print (r)
             wtr.writerow([r[2] + ' ' + r[3]] + r[0:])
             
 except Exception as e:
